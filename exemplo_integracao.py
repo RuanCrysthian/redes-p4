@@ -17,7 +17,7 @@ def dados_recebidos(conexao, dados):
     if dados == b'':
         conexao.fechar()
     else:
-        conexao.enviar(dados)   # envia de volta
+        conexao.enviar(dados)  
 
 def conexao_aceita(conexao):
     conexao.registrar_recebedor(dados_recebidos)   # usa esse mesmo recebedor para toda conexão aceita
